@@ -1,0 +1,82 @@
+//Variables/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$primaryColor: #070707;
+$secondaryColor: #828282;
+$gray: #f6f6f6;
+$white: #fff;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Fonts/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Gilroy Bold
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../ Gilroy-Bold.eot');
+	src: local('☺'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype'), url('../fonts/Gilroy-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+//Gilroy Medium
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.eot');
+	src: local('☺'), url('../fonts/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium.ttf') format('truetype'), url('../fonts/Gilroy-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Reset styles/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    color: $primaryColor;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    scroll-behavior: smooth;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Components/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.container {
+    max-width: 100rem;
+    width: 100%;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+.secondary-title {
+    font-size: 3.4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////

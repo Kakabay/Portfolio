@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__nav {
+    height: 8.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $secondaryColor;
+}
+
+.header__item {
+    color: $secondaryColor;
+    font-size: 1.8rem;
+    transition: color .3s linear;
+    font-weight: 700;
+    &:hover {
+        color: $primaryColor;
+    }
+    &:focus {
+        color: $primaryColor;
+    }
+}

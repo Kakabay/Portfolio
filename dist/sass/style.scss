@@ -1,0 +1,160 @@
+
+// Vars ===============================================================
+
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+
+// Mixins ===============================================================
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+// Imports ===============================================================
+
+@import "global";
+@import "header";
+@import "hero";
+@import "projects";
+@import "contact";
+@import "footer";
+@import "load";
+
+// Media Queries ===============================================================
+
+// @media screen and (max-width: 2100px) {
+//   html {
+//     font-size: 53%;
+//   }
+
+//   .me-svg {
+//     width: 90%;
+//   }
+// }
+
+@media screen and (max-width:2082px) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media screen and (max-width: 1378px) {
+
+  .splash {
+    display: none;
+  }
+
+  svg {
+    width: 80%;
+  }
+
+  nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .hero-text {
+    margin-top: 5rem;
+    text-align: center;
+    flex: 1 1 40rem;
+  }
+
+  .hero-images {
+    text-align: center;
+  }
+
+  
+  .hero-social {
+    margin-top: 2rem;
+    @include flex(center, center, row);
+    a {
+      margin: 2rem;
+    }
+  }
+
+  .hero {
+    @include flex(center, center, column);
+  }
+ 
+}
+
+@media screen and (max-width: 823px) {
+  .hero {
+    @include flex(center, center, row);
+  }
+  .hero-text {
+    margin-top: 5rem;
+    text-align: center;
+    flex: 1 1 20rem;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  svg {
+    height: 60%;
+    flex: 1 1 600rem;
+  }
+  .main-head {
+    width: 100%;
+  }
+
+  .logo {
+    @include flex(center,center, column);
+    flex: 1 1 20rem;
+    margin-top: 2rem;
+  }
+
+  .header-nav {
+    flex: 1 1 60rem;
+    margin: 2rem 0;
+  }
+
+
+  .elena,
+  .travelly {
+    flex: 1 1 50rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  form {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-text {
+    h2 {
+      font-size: 6rem;
+    }
+    h3 {
+      font-size: 4rem;
+    }
+  }
+  .text {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  html {
+    font-size: 37%;
+  }
+}

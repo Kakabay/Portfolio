@@ -1,0 +1,41 @@
+.intro {
+    background: $gradient;// green
+    // background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include flex(center, center, column);
+}
+
+.intro-text {
+    // color: rgb(233, 233, 233);
+    color: white; //green
+}
+
+.text {
+    font-size: 10rem;
+}
+
+.slider {
+    // background: rgb(97, 105, 109);
+    background: rgb(56, 164, 211); //green
+    // background: #3ab7c1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.hide {
+    // background: #000; 
+    overflow: hidden;
+}
+
+.text {
+    transform: translateY(100%);
+    display: inline-block;
+}

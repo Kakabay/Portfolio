@@ -1,0 +1,89 @@
+.hero {
+    min-height: 90vh;
+    padding-bottom: 4rem;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    @include flex(space-between, center, row);
+    h2 {
+        font-size: 7rem;
+        padding-top: 2rem;
+        color: #3ab7c1;
+        display: inline-block;
+    }
+    h3 {
+        font-size: 6rem;
+        padding: 2rem 0;
+    }
+    p {
+        padding-top: 2rem;
+        color: $gray-text;
+    }
+}
+
+.splash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 110vh;
+    z-index: -1;
+}
+
+.hero-text,
+.hero-images {
+    flex: 1 1 40rem;
+}
+
+.hero-social {
+    margin-top: 4rem;
+    a {
+        margin-right: 4rem;
+    }
+}
+
+#plant-left {
+    animation: plants 1.5s ease infinite alternate;
+}
+
+#plant-right {
+    animation: plants 1.5s ease infinite alternate 0.5s;
+}
+
+#me {
+    animation: me 1s ease infinite alternate;
+    transform-origin: bottom;
+}
+
+#clock-arrow {
+    animation: clock 1.5s infinite linear;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+@keyframes me {
+    from {
+        transform: rotateZ(-10deg);
+    }
+    to  {
+        transform: rotateZ(5deg);
+    }
+}
+
+@keyframes clock {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes plants {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-20%);
+    }
+}
+
